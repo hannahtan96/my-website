@@ -1,21 +1,16 @@
-import React from "react";
-import Button from "./Button";
 
-import yourData from "../data/data.json";
 
-interface SocialsProps {
-    className?: String
-}
+import data from "../data/data.json";
 
-const Socials = ({ className }: SocialsProps) => {
+const Socials = () => {
   return (
-    <div className={`${className} flex flex-wrap mob:flex-nowrap link`}>
-      {yourData.socials.map((social, index) => (
-        <Button key={index} onClick={() => window.open(social.link)}>
-          {social.title}
-        </Button>
-      ))}
-    </div>
+    <div className="flex flex-wrap col-gap">
+				{data.socials.map((social, index) => (
+					<div key={index} className="socials-button" onClick={() => window.open(social.link)}>
+						{social.title}
+					</div>
+				))}
+		</div>
   );
 };
 
