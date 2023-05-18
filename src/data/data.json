@@ -4,6 +4,13 @@
     "showBlog": true,
     "darkMode": true,
     "showResume": true,
+    "personas": [
+        "Software Engineer",
+        "Finance Professional",
+        "Adie",
+        "Northeastern Husky",
+        "Dessert Connoisseur"
+    ],
     "socials": [
         {
             "id": "1",
@@ -25,29 +32,21 @@
         {
             "id": "first-p-about",
             "content":
-              "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+              "In September 2022, I packed up my bags and flew 2,500 miles from Boston, MA to Seattle, WA to embark on a new adventure to discover my interest in computer science and software engineering. Today, I'm learning to master Python, HTML/CSS, and Javascript."
           },
           {
             "id": "second-p-about",
             "content":
-              "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+              "Prior to joining Ada, I worked as an Senior Analyst at Hercules Capital, conducting financial due diligence for start-ups within the tech industry. Over my 1.5-year tenure, I led and participated in qualitative and quantitive analysis of ten companies, totaling to over $500M in commitments invested. \n Come along for the journey!"
           }
-    ],
-    "skills": [
-        {
-            "id": "1",
-            "name": "Java",
-            "percentage": "100%",
-            "value": "100"
-        }
     ],
     "projects": [
         {
             "id": "1",
-            "title": "Project One Test",
-            "description": "Web Design",
+            "title": "Volatile",
+            "description": "Python • Firebase • TypeScript • React",
             "imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "url": "https://github.com/hannahtan96/volatile-back-end.com/"
         },
         {
             "id": "2",
@@ -68,20 +67,6 @@
             "title": "Project Four",
             "description": "Marketing",
             "imageSrc": "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
-        },
-        {
-            "id": "5",
-            "title": "Project Five",
-            "description": "Development",
-            "imageSrc": "https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
-        },
-        {
-            "id": "6",
-            "title": "Project Six",
-            "description": "Design & Development",
-            "imageSrc": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
             "url": "http://chetanverma.com/"
         }
     ],

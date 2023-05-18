@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 interface ProjectCardProps {
@@ -22,11 +21,10 @@ const ProjectCard = ({ imgPath, isBlog, title, description, ghLink, demoLink }: 
 				<Card.Text style={{ textAlign: "justify" }}>
 					{description}
 				</Card.Text>
-				<Button variant="primary" href={ghLink} target="_blank">
+				<Button className="button button-gh" variant="primary" href={ghLink} target="_blank">
 					<BsGithub /> &nbsp;
 					{isBlog ? "Blog" : "GitHub"}
 				</Button>
-				{"\n"}
 				{"\n"}
 			</Card.Body>
 		</Card>

@@ -11,7 +11,7 @@ import data from "../data/data.json";
 
 const Projects = () => {
 	return (
-		<section id="projects" className="portfolio-mf sect-pt4 route">
+		<section id="projects" className="portfolio-mf sect-pt2 route">
 			<div className="container">
 				<div className="row">
 					<div className="col-sm-12">

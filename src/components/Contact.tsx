@@ -1,13 +1,49 @@
-import React from "react";
-import '../style.css';
+import { FormEvent, useEffect, useState } from 'react';
+import emailjs from 'emailjs-com';
+import { AnyRecord } from 'dns';
 
 const Contact = () => {
+
+	const [buttonValue, setButtonValue] = useState('Send Email');
+	const [successMessage, setSuccessMessage] = useState('')
+	const [subject, setSubject] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+	
+	const handleSubmit = (event: any) => {
+		console.log(typeof(event))
+		event.preventDefault();
+    setButtonValue('Sending...');
+
+		const serviceID = 'service_tbdruox';
+    const templateID = 'template_uj462z8';
+
+		emailjs.init("R63GNn71flyYPX44d");
+
+    emailjs.sendForm(serviceID, templateID, event.target)
+      .then(() => {
+        setButtonValue('Send Email');
+        setSuccessMessage('Your message has been sent. Thank you!');
+      })
+      .catch((err) => {
+        setButtonValue('Send Email');
+				setSuccessMessage('');
+        alert(JSON.stringify(err));
+      })
+			.finally(() => {
+				setSubject('');
+        setName('');
+        setEmail('');
+        setMessage('');
+				event.target.reset();
+			})
+	}
+
 	return (
 		<section
-			className="paralax-mf footer-paralax bg-image sect-mt4 route"
-		// style={{ backgroundImage: "url(" + imageOverlay + ")" }}
+			className="paralax-mf bg-image sect-mt2 route"
 		>
-			<div className="overlay-mf"></div>
 			<div className="container">
 				<div className="row">
 					<div className="col-sm-12">
@@ -16,18 +52,10 @@ const Contact = () => {
 								<div className="row">
 									<div className="col-md-6">
 										<div className="title-box-2">
-											<h5 className="title-left">Send A Message</h5>
+											<h5 className="title-left">Send Me A Message</h5>
 										</div>
 										<div>
-											<form
-												action="https://formspree.io/xdoeonlo"
-												method="POST"
-												className="contactForm"
-											>
-												<div id="sendmessage">
-													Your message has been sent. Thank you!
-												</div>
-												<div id="errormessage"></div>
+											<form id="form" onSubmit={handleSubmit} className="contactForm">
 												<div className="row">
 													<div className="col-md-12 mb-3">
 														<div className="form-group">
@@ -37,8 +65,6 @@ const Contact = () => {
 																className="form-control"
 																id="name"
 																placeholder="Your Name"
-																data-rule="minlen:4"
-																data-msg="Please enter at least 4 chars"
 															/>
 															<div className="validation"></div>
 														</div>
@@ -65,8 +91,6 @@ const Contact = () => {
 																name="subject"
 																id="subject"
 																placeholder="Subject"
-																data-rule="minlen:4"
-																data-msg="Please enter at least 8 chars of subject"
 															/>
 															<div className="validation"></div>
 														</div>
@@ -92,6 +116,7 @@ const Contact = () => {
 															Send Message
 														</button>
 													</div>
+													{successMessage && <p>{successMessage}</p>}
 												</div>
 											</form>
 										</div>
@@ -108,11 +133,6 @@ const Contact = () => {
 												<br />
 												Simply fill the from and send me an email.
 											</p>
-											{/* <!-- <ul class="list-ico">
-                                <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                                <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
-                                <li><span class="ion-email"></span> contact@example.com</li>
-                                </ul> --> */}
 										</div>
 									</div>
 								</div>

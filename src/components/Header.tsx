@@ -3,7 +3,7 @@
 import data from "../data/data.json";
 import "../style.css";
 import Socials from "./Socials";
-
+// import resume from "../assets/resume.pdf";
 
 const Header = () => {
   return (
@@ -44,7 +44,12 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll" href="#projects">
-                Project
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="https://drive.google.com/file/d/1RMFjPHzIxGYJTq6jfLR49ctk7KSMr5VK/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+                Resume
               </a>
             </li>
             <li className="nav-item">

@@ -17,6 +17,16 @@ const Footer = () => {
         <div className="footer-copywright">
           <span>Copyright © {year}</span>
         </div>
+        <span>
+          Inspired by&nbsp;
+          <a href="https://react-portfolio-template.netlify.app/">
+            Chetan Verma
+          </a>
+          &nbsp;and&nbsp;
+          <a href="https://sajib.vercel.app/">
+            Sajib
+          </a>
+        </span>
     </section>
   );
 }
