@@ -57,7 +57,7 @@
         },
         {
             "id": "3",
-            "title": "Yelper",
+            "title": "Yelper Helper",
             "description": "Express • Node • React • MongoDB",
             "imageSrc": "https://images.unsplash.com/photo-1472393365320-db77a5abbecc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTA0NjV8MHwxfGFsbHx8fHx8fHx8fDE2ODQ0NzUyOTV8&ixlib=rb-4.0.3&q=80&w=1080",
             "url": "https://github.com/hannahtan96/yelper-helper-app-be"
