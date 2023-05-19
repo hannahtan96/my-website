@@ -17,9 +17,9 @@ const Projects = () => {
 					<div className="col-sm-12">
 						<div className="box-shadow-full">
 							<div className="title-box-2">
-								<h5 className="title-left">Project</h5>
+								<h5 className="title-left">Projects</h5>
 							</div>
-							<p style={{ color: "white" }}>
+							<p style={{ color: "gray" }}>
 								Here are a few projects I've worked on recently.
 							</p>
 							<div className="row" style={{ justifyContent: "center", paddingBottom: "10px" }}>

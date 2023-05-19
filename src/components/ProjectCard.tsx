@@ -15,13 +15,13 @@ interface ProjectCardProps {
 const ProjectCard = ({ imgPath, isBlog, title, description, ghLink, demoLink }: ProjectCardProps) => {
 	return (
 		<Card className="project-card-view">
-			<Card.Img variant="top" src={imgPath} alt="card-img" />
+			<Card.Img className="cardImage" variant="top" src={imgPath} alt="card-img" />
 			<Card.Body>
 				<Card.Title>{title}</Card.Title>
-				<Card.Text style={{ textAlign: "justify" }}>
+				<Card.Text style={{ textAlign: "left", fontSize: "13px", fontStyle: "italic", color: "darkgray" }}>
 					{description}
 				</Card.Text>
-				<Button className="button button-gh" variant="primary" href={ghLink} target="_blank">
+				<Button className="button-gh" variant="primary" href={ghLink} target="_blank">
 					<BsGithub /> &nbsp;
 					{isBlog ? "Blog" : "GitHub"}
 				</Button>

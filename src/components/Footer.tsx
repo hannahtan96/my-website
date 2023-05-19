@@ -14,16 +14,16 @@ const Footer = () => {
   let year = date.getFullYear();
   return (
     <section id="footer">
-        <div className="footer-copywright">
+        {/* <div className="footer-copywright">
           <span>Copyright © {year}</span>
-        </div>
-        <span>
+        </div> */}
+        <span className="sm-size">
           Inspired by&nbsp;
-          <a href="https://react-portfolio-template.netlify.app/">
+          <a className="no-decoration black" href="https://react-portfolio-template.netlify.app/">
             Chetan Verma
           </a>
           &nbsp;and&nbsp;
-          <a href="https://sajib.vercel.app/">
+          <a className="no-decoration black" href="https://sajib.vercel.app/">
             Sajib
           </a>
         </span>

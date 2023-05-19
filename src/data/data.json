@@ -45,29 +45,22 @@
             "id": "1",
             "title": "Volatile",
             "description": "Python • Firebase • TypeScript • React",
-            "imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+            "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTA0NjV8MHwxfGFsbHx8fHx8fHx8fDE2ODQ0NzQ4MTV8&ixlib=rb-4.0.3&q=80&w=1080",
             "url": "https://github.com/hannahtan96/volatile-back-end.com/"
         },
         {
             "id": "2",
-            "title": "Project Two",
-            "description": "Web Development",
-            "imageSrc": "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "Photo Share",
+            "description": "TypeScript • Angular • Firebase",
+            "imageSrc": "https://images.unsplash.com/photo-1575998256837-7576111c5bfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTA0NjV8MHwxfGFsbHx8fHx8fHx8fDE2ODQ0NzU0Njd8&ixlib=rb-4.0.3&q=80&w=1080",
+            "url": "https://github.com/hannahtan96/photo-share"
         },
         {
             "id": "3",
-            "title": "Project Three",
-            "description": "Design",
-            "imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
-        },
-        {
-            "id": "4",
-            "title": "Project Four",
-            "description": "Marketing",
-            "imageSrc": "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "Yelper",
+            "description": "Express • Node • React • MongoDB",
+            "imageSrc": "https://images.unsplash.com/photo-1472393365320-db77a5abbecc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTA0NjV8MHwxfGFsbHx8fHx8fHx8fDE2ODQ0NzUyOTV8&ixlib=rb-4.0.3&q=80&w=1080",
+            "url": "https://github.com/hannahtan96/yelper-helper-app-be"
         }
     ],
     "resume": {

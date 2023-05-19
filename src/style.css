@@ -54,6 +54,18 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+.no-decoration {
+  text-decoration: none;
+}
+
+.black {
+  color: black;
+}
+
+.sm-size {
+  font-size: small;
+}
+
 .p-r {
   position: relative;
 }
@@ -737,6 +749,11 @@ PORTFOLIO
   height: 100%;
 }
 
+.cardImage {
+  object-fit: cover;
+  height: 250px; /* Adjust the desired height as needed */
+}
+
 
 /*
 CONTACT
@@ -758,8 +775,9 @@ FOOTER
   text-align: center;
   color: black;
   background-color: #fff;
-
+  text-decoration: none;
 }
+
 
 #footer .copyright {
   margin-bottom: .3rem;
