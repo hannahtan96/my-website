@@ -1,36 +1,31 @@
+import React, { useState } from 'react';
+import data from "../data/data.json"
 
-// Local Data
-import data from "../data/data.json";
-import "../style.css";
-import Socials from "./Socials";
-// import resume from "../assets/resume.pdf";
+function Header() {
+  const [isExpanded, setIsExpanded] = useState(false);
 
-const Header = () => {
+  const handleToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
-    <nav
-      className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
-      id="mainNav"
-    >
+    <nav className={`navbar navbar-b navbar-trans navbar-expand-md fixed-top ${isExpanded ? 'expanded' : ''}`}>
       <div className="container">
         <a className="navbar-brand js-scroll" href="#page-top">
         </a>
         <button
           className="navbar-toggler collapsed"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarDefault"
+          onClick={handleToggle}
           aria-controls="navbarDefault"
-          aria-expanded="false"
+          aria-expanded={isExpanded}
           aria-label="Toggle navigation"
         >
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <div
-          className="navbar-collapse collapse justify-content-end"
-          id="navbarDefault"
-        >
+        <div className={`navbar-collapse collapse justify-content-end ${isExpanded ? 'show' : ''}`} id="navbarDefault">
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link js-scroll active" href="#home">
