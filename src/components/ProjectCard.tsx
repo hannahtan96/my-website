@@ -5,26 +5,32 @@ import { BsGithub } from "react-icons/bs";
 
 interface ProjectCardProps {
 	imgPath: string,
-	isBlog: boolean,
 	title: string,
 	description: string,
+	languages: string,
 	ghLink: string,
-	demoLink?: string
+	feLink: string
 }
 
-const ProjectCard = ({ imgPath, isBlog, title, description, ghLink, demoLink }: ProjectCardProps) => {
+const ProjectCard = ({ imgPath, title, description, languages, ghLink, feLink }: ProjectCardProps) => {
 	return (
 		<Card className="project-card-view">
 			<Card.Img className="cardImage" variant="top" src={imgPath} alt="card-img" />
-			<Card.Body>
+			<Card.Body className="flex-down">
 				<Card.Title>{title}</Card.Title>
-				<Card.Text style={{ textAlign: "left", fontSize: "13px", fontStyle: "italic", color: "darkgray" }}>
+				<Card.Text style={{ textAlign: "left", fontSize: "14px", color: "darkgray" }}>
 					{description}
 				</Card.Text>
+				<Card.Text style={{ textAlign: "left", fontSize: "11px", fontStyle: "italic", color: "lightgray" }}>
+					{languages}
+				</Card.Text>
+
 				<Button className="button-gh" variant="primary" href={ghLink} target="_blank">
 					<BsGithub /> &nbsp;
-					{isBlog ? "Blog" : "GitHub"}
+						GitHub
 				</Button>
+
+				{"\n"}
 				{"\n"}
 			</Card.Body>
 		</Card>

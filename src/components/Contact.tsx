@@ -7,9 +7,9 @@ const Contact = () => {
 	const [buttonValue, setButtonValue] = useState('Send Email');
 	const [successMessage, setSuccessMessage] = useState('')
 	const [subject, setSubject] = useState('');
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [message, setMessage] = useState('');
 	
 	const handleSubmit = (event: any) => {
 		console.log(typeof(event))

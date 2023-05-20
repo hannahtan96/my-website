@@ -63,6 +63,13 @@ a:hover {
   text-decoration: none;
 }
 
+.no-border {
+  border: transparent !important;
+  border-radius: 30px;
+}
+
+
+
 .black {
   color: black;
 }
@@ -160,6 +167,11 @@ a:hover {
   display: flex;
 }
 
+.flex-down {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -172,8 +184,17 @@ a:hover {
   justify-items: left;
 }
 
+.center-align {
+  text-align: center;
+
+}
 .right-align {
   justify-items: right;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+  flex-grow: 1; 
 }
 
 /* Sections */
@@ -184,6 +205,10 @@ a:hover {
 
 .sect-pt2 {
   padding-top: 2rem;
+}
+
+.sect-pt4 {
+  padding-top: 4rem !important;
 }
 
 .sect-mt2 {
@@ -603,15 +628,20 @@ NAVBAR
 INTRO
 */
 
-.intro {
-  height: 80vh;
-  position: relative;
-  color: black;
+.intro-mf {
+  padding-top: 4rem;
 }
 
+.intro {
+  padding-top: 100px !important;
+  padding: 40px !important;
+}
+
+
 .intro .intro-content {
+  color: black;
   text-align: left;
-  position: absolute;
+  padding-bottom: 3rem;
 }
 
 .intro .overlay-intro {
@@ -638,12 +668,8 @@ INTRO
   font-weight: 300;
 }
 
-/* .intro .text-slider-items {
-  font-weight: bolder;
-} */
-
 .intro-single {
-  height: 350px;
+  height: 200px;
 }
 
 .intro-single .intro-content {
@@ -670,6 +696,18 @@ INTRO
 
 .intro-single .breadcrumb a {
   color: black;
+}
+
+.profile-pic-container {
+  text-align: center;
+  /* padding-top: 3rem; */
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* Ensure the image fills the container */
+  border-radius: 50%;
 }
 
 /*
@@ -709,19 +747,40 @@ ABOUT
 PORTFOLIO
 */
 
-.project-card-view {
+.project-card-view,
+.skill-card-view {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: black;
   height: 100%;
 }
 
 .cardImage {
   object-fit: cover;
-  height: 250px; /* Adjust the desired height as needed */
+  height: 15rem; /* Adjust the desired height as needed */
 }
 
+.card-body {
+  height: 22rem;
+}
+
+/*
+SKILLS
+*/
+
+.skill-card-view {
+  width: auto !important;
+  margin: 1rem !important;
+  padding: none !important;
+}
+
+.skill-logo {
+	width: 8rem;
+}
+
+.skill-logo img {
+	width: 100%;
+}
 
 /*
 CONTACT
@@ -814,6 +873,7 @@ BUTTON
 .button-gh {
   background-color: var(--majestic-purple) !important;
   border: 2px solid gray !important;
+  margin-top: auto;
 }
 
 .button:focus {

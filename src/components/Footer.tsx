@@ -10,8 +10,6 @@ import Socials from "./Socials";
 import logo from "../assets/sLogo.png";
 
 const Footer = () => {
-  let date = new Date();
-  let year = date.getFullYear();
   return (
     <section id="footer">
         {/* <div className="footer-copywright">
