@@ -43,7 +43,7 @@ function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="https://drive.google.com/file/d/1RMFjPHzIxGYJTq6jfLR49ctk7KSMr5VK/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+              <a className="nav-link" href={data.resume.link} rel="noopener noreferrer" target="_blank">
                 Resume
               </a>
             </li>

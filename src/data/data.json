@@ -26,7 +26,7 @@
         {
             "id": "3",
             "title": "Email",
-            "link": "mailto:hannahtan96@gmail.com"
+            "link": "mailto:hannahxtan1@gmail.com"
         }
     ],
     "about_me": [
@@ -103,6 +103,7 @@
         }
     ],
     "resume": {
+        "link": "https://docs.google.com/document/u/3/d/e/2PACX-1vQt_DE0awDQwtUvQr7aZGLrU2iGhEOAb1zt9BOKyNtvO44kEFEWlxK6mIpjYFM5Xg/pub",
         "tagline": "👋  I'm a software engineer, product designer.",
         "languages": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",
         "experiences": [
